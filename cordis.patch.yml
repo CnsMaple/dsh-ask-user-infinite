@@ -1,0 +1,4 @@
+# dsh-ask-user-infinite：所有预设中的 ask_user_question 默认无限等待。
+- insert:
+    - id: ask-user-infinite
+      name: dsh-ask-user-infinite

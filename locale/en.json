@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Infinite ask questions",
+    "description": "Makes ask_user_question wait indefinitely by default in every preset. Questions stay open until you answer, with no countdown or automatic timeout."
+  }
+}
