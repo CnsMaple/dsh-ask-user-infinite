@@ -1,7 +1,7 @@
 {
   "name": "dsh-ask-user-infinite",
-  "version": "0.1.0",
-  "description": "Make ask_user_question wait indefinitely by default in every DSH preset, without editing presets.",
+  "version": "0.1.1",
+  "description": "Make ask_user_question wait indefinitely in every preset and widen the PTC run_code budget so waits are not cut short.",
   "license": "MIT",
   "private": true,
   "type": "module",
@@ -11,7 +11,20 @@
     "./locale/*.json": "./locale/*.json",
     "./icon": "./icon.svg"
   },
-  "files": ["index.js", "cordis.patch.yml", "locale/*.json", "icon.svg", "README.md", "LICENSE"],
-  "engines": { "dsh": "^0.2.3-alpha.2" },
-  "dsh": { "bundle": { "patch": "./cordis.patch.yml" } }
+  "files": [
+    "index.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "dsh": "^0.2.3-alpha.2"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
 }

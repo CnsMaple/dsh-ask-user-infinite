@@ -1,6 +1,6 @@
 {
   "meta": {
     "title": "Infinite ask questions",
-    "description": "Makes ask_user_question wait indefinitely by default in every preset. Questions stay open until you answer, with no countdown or automatic timeout."
+    "description": "Makes ask_user_question wait indefinitely by default in every preset and raises the PTC run_code budget to 7 days so waits are not cut short."
   }
 }

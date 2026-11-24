@@ -2,3 +2,11 @@
 - insert:
     - id: ask-user-infinite
       name: dsh-ask-user-infinite
+
+# 同时放宽 PTC / run_code 的外层程序预算，避免无限等待被默认 120s/600s 预算掐断。
+# 7 天 = 604800000ms，低于 Node 定时器上限 2147483647ms。
+- id: ptc-runtime
+  name: '@deepseek-ai/dsh-ptc-runtime-node'
+  config:
+    timeoutMs: 604800000
+    maxTimeoutMs: 604800000
